@@ -1,13 +1,12 @@
-'use strict';
-var test = require('ava');
-var titleize = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.assert(titleize('') === '');
-	t.assert(titleize('unicorns and rainbows') === 'Unicorns And Rainbows');
-	t.assert(titleize('UNICORNS AND RAINBOWS') === 'Unicorns And Rainbows');
-	t.assert(titleize('unicorns-and-rainbows') === 'Unicorns-And-Rainbows');
-	t.assert(titleize('UNICORNS-AND-RAINBOWS') === 'Unicorns-And-Rainbows');
-	t.assert(titleize('unicorns   and rainbows') === 'Unicorns   And Rainbows');
+test(t => {
+	t.is(fn(''), '');
+	t.is(fn('unicorns and rainbows'), 'Unicorns And Rainbows');
+	t.is(fn('UNICORNS AND RAINBOWS'), 'Unicorns And Rainbows');
+	t.is(fn('unicorns-and-rainbows'), 'Unicorns-And-Rainbows');
+	t.is(fn('UNICORNS-AND-RAINBOWS'), 'Unicorns-And-Rainbows');
+	t.is(fn('unicorns   and rainbows'), 'Unicorns   And Rainbows');
 	t.end();
 });
