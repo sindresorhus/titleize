@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save titleize
 ```
 
@@ -13,13 +13,13 @@ $ npm install --save titleize
 ## Usage
 
 ```js
-var titleize = require('titleize');
+const titleize = require('titleize');
 
 titleize('foo bar');
-//=> Foo Bar
+//=> 'Foo Bar'
 
 titleize('foo-bar');
-//=> Foo-Bar
+//=> 'Foo-Bar'
 ```
 
 
