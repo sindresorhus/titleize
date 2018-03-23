@@ -1,11 +1,11 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
-test(t => {
-	t.is(fn(''), '');
-	t.is(fn('unicorns and rainbows'), 'Unicorns And Rainbows');
-	t.is(fn('UNICORNS AND RAINBOWS'), 'Unicorns And Rainbows');
-	t.is(fn('unicorns-and-rainbows'), 'Unicorns-And-Rainbows');
-	t.is(fn('UNICORNS-AND-RAINBOWS'), 'Unicorns-And-Rainbows');
-	t.is(fn('unicorns   and rainbows'), 'Unicorns   And Rainbows');
+test('main', t => {
+	t.is(m(''), '');
+	t.is(m('unicorns and rainbows'), 'Unicorns And Rainbows');
+	t.is(m('UNICORNS AND RAINBOWS'), 'Unicorns And Rainbows');
+	t.is(m('unicorns-and-rainbows'), 'Unicorns-And-Rainbows');
+	t.is(m('UNICORNS-AND-RAINBOWS'), 'Unicorns-And-Rainbows');
+	t.is(m('unicorns   and rainbows'), 'Unicorns   And Rainbows');
 });

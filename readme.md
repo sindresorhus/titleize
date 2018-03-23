@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save titleize
+$ npm install titleize
 ```
 
 
@@ -23,6 +23,11 @@ titleize('foo-bar');
 ```
 
 
+## Related
+
+- [camelcase](https://github.com/sindresorhus/camelcase) - Convert a dash/dot/underscore/space separated string to camelcase
+
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
