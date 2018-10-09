@@ -4,5 +4,5 @@ module.exports = input => {
 		throw new TypeError('Expected a string');
 	}
 
-	return input.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
+	return input.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase()).replace(/_|-/g, " ");
 };
