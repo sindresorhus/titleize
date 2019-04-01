@@ -8,4 +8,5 @@ const titleize = input => {
 };
 
 module.exports = titleize;
+// TODO: Remove this for the next major release
 module.exports.default = titleize;
