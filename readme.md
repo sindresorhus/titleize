@@ -1,4 +1,4 @@
-# titleize [![Build Status](https://travis-ci.org/sindresorhus/titleize.svg?branch=master)](https://travis-ci.org/sindresorhus/titleize)
+# titleize
 
 > Capitalize every word in a string: `unicorn cake` → `Unicorn Cake`
 
