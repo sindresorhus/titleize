@@ -1,6 +1,6 @@
 {
 	"name": "titleize",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "Capitalize every word in a string: `unicorn cake` → `Unicorn Cake`",
 	"license": "MIT",
 	"repository": "sindresorhus/titleize",
