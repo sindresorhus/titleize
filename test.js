@@ -1,5 +1,5 @@
 import test from 'ava';
-import titleize from '.';
+import titleize from './index.js';
 
 test('main', t => {
 	t.is(titleize(''), '');

@@ -1,12 +1,7 @@
-'use strict';
-const titleize = input => {
-	if (typeof input !== 'string') {
+export default function titleize(string) {
+	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return input.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
-};
-
-module.exports = titleize;
-// TODO: Remove this for the next major release
-module.exports.default = titleize;
+	return string.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
+}

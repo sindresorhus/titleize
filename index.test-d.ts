@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import titleize = require('.');
+import titleize from './index.js';
 
 expectType<string>(titleize('foo bar'));
