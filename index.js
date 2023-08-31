@@ -3,5 +3,5 @@ export default function titleize(string) {
 		throw new TypeError('Expected a string');
 	}
 
-	return string.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
+	return string.toLowerCase().replaceAll(/(?:^|\s|-)\S/g, x => x.toUpperCase());
 }

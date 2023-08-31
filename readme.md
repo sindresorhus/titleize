@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install titleize
+```sh
+npm install titleize
 ```
 
 ## Usage
